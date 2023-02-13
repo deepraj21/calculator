@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>JavaScript Calculator</title>
+    <style>
+        #calculator {
+            width: 400px;
+            height: 500px;
+            margin: auto;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: center;
+            background-color: lightgray;
+            margin-top: 2.8cm;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            height: 50px;
+            font-size: 18px;
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        input[type="button"] {
+            width: 70px;
+            height: 70px;
+            font-size: 18px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+        body{
+            background-color:darkgray;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="calculator">
+        <h2>JavaScript Calculator</h2>
+        <form>
+            <input type="text" id="expression" disabled />
+            <br /><br />
+            <input type="button" value="1" onclick="document.getElementById('expression').value+='1'" />
+            <input type="button" value="2" onclick="document.getElementById('expression').value+='2'" />
+            <input type="button" value="3" onclick="document.getElementById('expression').value+='3'" />
+            <input type="button" value="+" onclick="document.getElementById('expression').value+='+'" />
+            <br />
+            <input type="button" value="4" onclick="document.getElementById('expression').value+='4'" />
+            <input type="button" value="5" onclick="document.getElementById('expression').value+='5'" />
+            <input type="button" value="6" onclick="document.getElementById('expression').value+='6'" />
+            <input type="button" value="-" onclick="document.getElementById('expression').value+='-'" />
+            <br />
+            <input type="button" value="7" onclick="document.getElementById('expression').value+='7'" />
+            <input type="button" value="8" onclick="document.getElementById('expression').value+='8'" />
+            <input type="button" value="9" onclick="document.getElementById('expression').value+='9'" />
+            <input type="button" value="*" onclick="document.getElementById('expression').value+='*'" />
+            <br />
+            <input type="button" value="C" onclick="document.getElementById('expression').value=''" />
+            <input type="button" value="0" onclick="document.getElementById('expression').value+='0'" />
+            <input type="button" value="="
+                onclick="document.getElementById('expression').value=eval(document.getElementById('expression').value)" />
+            <input type="button" value="/" onclick="document.getElementById('expression').value+='/'" />
+        </form>
+
+</body>
+
+</html>
